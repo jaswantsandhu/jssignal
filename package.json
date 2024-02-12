@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Javascript Signals",
   "main": "./dist/jssignal.min.js",
+  "private":"false",
   "scripts": {
     "install": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
