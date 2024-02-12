@@ -2,8 +2,9 @@
   "name": "jssignal",
   "version": "0.0.1",
   "description": "Javascript Signals",
-  "main": "index.js",
+  "main": "./dist/jssignal.min.js",
   "scripts": {
+    "install": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec ts-node demo/application.ts",
     "build": "rm -rf ./dist && webpack"
