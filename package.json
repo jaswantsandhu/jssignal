@@ -1,6 +1,6 @@
 {
   "name": "@jaswantsandhu/jssignal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript Signals",
   "main": "./dist/jssignal.min.js",
   "scripts": {
