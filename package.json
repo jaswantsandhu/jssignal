@@ -1,0 +1,37 @@
+{
+  "name": "jssignal",
+  "version": "0.0.1",
+  "description": "Javascript Signals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec ts-node demo/application.ts",
+    "build": "rm -rf ./dist && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaswantsandhu/jssignal.git"
+  },
+  "keywords": [
+    "Signal",
+    "Javascript",
+    "DOM",
+    "Effects"
+  ],
+  "author": "Jaswant Sandhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaswantsandhu/jssignal/issues"
+  },
+  "homepage": "https://github.com/jaswantsandhu/jssignal#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "rimraf": "^5.0.5"
+  }
+}
