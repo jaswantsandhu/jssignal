@@ -1,24 +1,48 @@
 const path = require('path');
 
-module.exports = {
-  mode: 'production',
-  entry: './lib/index.ts', // Entry point of your library
+const baseConfig = {
+  entry: './lib/index.ts',
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js'],
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'jssignal.min.js',
-    library: 'JSSignal',
-    libraryTarget: 'umd', 
+    extensions: ['.tsx', '.ts', '.js'],
   },
 };
+
+const umdConfig = {
+  ...baseConfig,
+  mode: 'production',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'jssignal.umd.js',
+    library: {
+      name: 'jssignal',
+      type: 'umd',
+    },
+    globalObject: 'this',
+  },
+};
+
+const esmConfig = {
+  ...baseConfig,
+  mode: 'production',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'jssignal.esm.js',
+    library: {
+      type: 'module',
+    },
+  },
+  experiments: {
+    outputModule: true,
+  },
+};
+
+module.exports = [umdConfig, esmConfig];
