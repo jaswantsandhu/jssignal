@@ -1,3 +1,5 @@
+[![Node.js Package](https://github.com/jaswantsandhu/jssignal/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/jaswantsandhu/jssignal/actions/workflows/npm-publish.yml)
+
 # JSSignal
 
 JSSignal is a lightweight JavaScript library for creating and managing custom signals and effects, making it easier to develop reactive applications with vanilla JavaScript or within a larger framework.
