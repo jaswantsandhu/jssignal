@@ -1,6 +1,6 @@
 {
   "name": "@jaswantsandhu/jssignal",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Javascript Signals",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
